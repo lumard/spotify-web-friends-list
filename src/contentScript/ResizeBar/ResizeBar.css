@@ -1,0 +1,14 @@
+.layout-resizer {
+    cursor: col-resize;
+    width: 8px;
+}
+
+.layout-resizer:hover {
+    border-left: 1px solid #b3b3b3;
+}
+
+.layout-resizer > input[type="range"] {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}

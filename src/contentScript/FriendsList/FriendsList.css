@@ -1,0 +1,39 @@
+.web-friends-list {
+    width: 300px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.LayoutResizer-buddylist {
+    cursor: col-resize;
+    opacity: 0;
+    width: 9px;
+}
+
+.friends-list {
+    height: 100%;
+    width: calc(100% - 9px);
+    max-width: 100%;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.friends-list-content {
+    overflow-y: scroll;
+    height: 100%;
+    overflow-x: hidden;
+    flex: 1;
+    flex-shrink: 0;
+    flex-grow: 1;
+}
+
+.friends-list-content-list {
+    list-style: none;
+}
+
+.friends-list-title {
+    color: white;
+    padding: 20px;
+}

@@ -1,0 +1,101 @@
+.activity-card {
+    width: 100%;
+    display: block;
+    margin: 25px 0 25px 0;
+    padding-right: 5px;
+}
+
+.activity-card-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    flex-grow: 0;
+    flex-shrink: 1;
+    word-break: keep-all;
+}
+
+.activity-link {
+    color: #b3b3b3;
+}
+
+.activity-artist-details, .activity-track-details, .activity-context-details {
+    font-weight: normal;
+    font-size: small;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.activity-user-avatar-container {
+    width: 48px;
+    height: 48px;
+    margin: 10px;
+}
+
+.activity-user-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgb(40, 40, 40);
+}
+
+.activity-user-avatar-halo {
+    border: 3px solid #1DB954;
+}
+
+.activity-user-info {
+    text-anchor: middle;
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 68px);
+}
+
+.activity-details {
+    display: flex;
+    flex-direction: row;
+}
+
+.activity-details-space {
+    margin: 0 5px 0 5px;
+}
+
+.activity-user-header {
+    display: flex;
+    flex-direction: row;
+}
+
+.activity-user-header-timestamp, activity-user-header-name {
+    display: inline;
+}
+
+.activity-user-header-timestamp {
+    text-align: right;
+    font-size: small;
+    font-weight: normal;
+}
+
+.activity-user-header-name {
+    text-align: left;
+    flex: 1;
+}
+
+@keyframes activity-slide-in {
+    from {position: relative;
+        top: 200px;}
+    99% {top: 0px;
+        position: relative;}
+    to {position: static;}
+}
+
+.activity-slide-in {
+    animation: activity-slide-in 500ms;
+}
+
+.context-details {
+    width: 100%;
+    display: flex;
+}

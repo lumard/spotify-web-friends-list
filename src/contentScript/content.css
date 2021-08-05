@@ -1,0 +1,6 @@
+.web-friends-list-container {
+    grid-area: buddy-feed;
+    background-color: black;
+    min-height: 0;
+    z-index: 3;
+}
