@@ -23,7 +23,7 @@ const getContainer: () => Promise<HTMLDivElement> = () => {
         let mutationObserver = new MutationObserver((mutations) => {
             mutations.forEach(mutation => {
                 mutation.addedNodes.forEach(node => {
-                    if ((node as Element).className === "Root") {
+                    if (/( |^)Root( |$)/.test((node as Element).className)) {
                         mutationObserver.disconnect();
                         resolve(document.querySelector(".Root__top-container") as HTMLDivElement);
                     }
